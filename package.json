@@ -3,13 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\"",
-    "dev:api": "cd api && node index.js",
-    "dev:client": "cd client && npm run dev",
-    "build": "cd client && npm run build",
-    "install:all": "npm install && cd api && npm install && cd ../client && npm install"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.2"
+    "build": "cd webapp/client && npm install && npm run build",
+    "dev:api": "cd webapp/api && node index.js",
+    "dev:client": "cd webapp/client && npm run dev"
   }
 }
+
