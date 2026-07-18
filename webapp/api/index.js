@@ -15,7 +15,7 @@ app.use(express.json());
 // ─── IN-MEMORY DATA STORE ─────────────────────────────────────
 const db = {
   users: [
-    { id: '1', username: 'admin',    password: bcrypt.hashSync('admin123', 10), role: 'ADMIN',   fullName: 'System Administrator', email: 'admin@srms.edu' },
+    { id: '1', username: 'NakulShekhawat', password: bcrypt.hashSync('Nakul8949@', 10), role: 'ADMIN',   fullName: 'System Administrator', email: 'admin@srms.edu' },
     { id: '2', username: 'faculty1', password: bcrypt.hashSync('admin123', 10), role: 'FACULTY', fullName: 'Dr. Priya Sharma',       email: 'priya@srms.edu' },
     { id: '3', username: 'faculty2', password: bcrypt.hashSync('admin123', 10), role: 'FACULTY', fullName: 'Prof. Rahul Mehta',       email: 'rahul@srms.edu' },
   ],
