@@ -5,8 +5,9 @@
   "private": true,
   "scripts": {
     "install:all": "cd webapp/api && npm install && cd ../client && npm install",
-    "dev:api":    "cd webapp/api && node index.js",
+    "dev:api": "cd webapp/api && node index.js",
     "dev:client": "cd webapp/client && npm run dev",
-    "build":      "cd webapp/client && npm install && npm run build"
+    "build": "npm run install:all && cd webapp/client && npm run build",
+    "start": "cd webapp/api && node index.js"
   }
 }

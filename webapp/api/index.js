@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const { v4: uuidv4 } = require('uuid');
@@ -295,6 +296,12 @@ app.delete('/api/users/:id', auth, adminOnly, (req, res) => {
   if (req.params.id === '1') return res.status(400).json({ error: 'Cannot delete admin' });
   db.users = db.users.filter(u => u.id !== req.params.id);
   res.json({ ok: true });
+});
+
+// ─── SERVE STATIC FRONTEND (PRODUCTION) ───────────────────────
+app.use(express.static(path.join(__dirname, '../client/dist')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
 app.listen(PORT, () => console.log(`SRMS API running on port ${PORT}`));
