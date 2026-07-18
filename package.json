@@ -1,11 +1,12 @@
 {
   "name": "srms",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "description": "Student Result Management System — Premium Web App",
   "private": true,
   "scripts": {
-    "build": "cd webapp/client && npm install && npm run build",
-    "dev:api": "cd webapp/api && node index.js",
-    "dev:client": "cd webapp/client && npm run dev"
+    "install:all": "cd webapp/api && npm install && cd ../client && npm install",
+    "dev:api":    "cd webapp/api && node index.js",
+    "dev:client": "cd webapp/client && npm run dev",
+    "build":      "cd webapp/client && npm install && npm run build"
   }
 }
-
