@@ -13,9 +13,12 @@ app.use(cors());
 app.use(express.json());
 
 // ─── IN-MEMORY DATA STORE ─────────────────────────────────────
+const adminUsername = process.env.ADMIN_USERNAME || 'admin';
+const adminPassword = process.env.ADMIN_PASSWORD || 'admin123';
+
 const db = {
   users: [
-    { id: '1', username: 'NakulShekhawat', password: bcrypt.hashSync('Nakul8949@', 10), role: 'ADMIN',   fullName: 'System Administrator', email: 'admin@srms.edu' },
+    { id: '1', username: adminUsername, password: bcrypt.hashSync(adminPassword, 10), role: 'ADMIN',   fullName: 'System Administrator', email: 'admin@evailx.edu' },
     { id: '2', username: 'faculty1', password: bcrypt.hashSync('admin123', 10), role: 'FACULTY', fullName: 'Dr. Priya Sharma',       email: 'priya@srms.edu' },
     { id: '3', username: 'faculty2', password: bcrypt.hashSync('admin123', 10), role: 'FACULTY', fullName: 'Prof. Rahul Mehta',       email: 'rahul@srms.edu' },
   ],
