@@ -1,4 +1,4 @@
-# Student Result Management System
+# Evailx
 
 ![Java](https://img.shields.io/badge/Java-17+-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-20+-green)
@@ -6,7 +6,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-**Full-Stack Student Result Management System — Two Versions:**
+**Full-Stack Evailx — Two Versions:**
 - 🌐 **Web App** (Node.js + React) — Premium UI, no database setup required
 - ☕ **Java Console App** (Java 17 + MySQL + JDBC)
 
@@ -120,7 +120,7 @@ http://localhost:5174
 ## 🗂 Project Structure
 
 ```
-student-result-management-system/
+evailx/
 ├── webapp/
 │   ├── api/
 │   │   ├── index.js              ← Express API (in-memory store, JWT auth)
@@ -150,7 +150,7 @@ student-result-management-system/
 │       │   └── index.css            ← Premium design system
 │       └── package.json
 │
-├── src/main/java/com/srms/          ← Java Console App
+├── src/main/java/com/evailx/          ← Java Console App
 │   ├── config/DBConnection.java
 │   ├── model/
 │   ├── repository/
@@ -176,7 +176,7 @@ source sql/schema.sql
 
 ### Step 2 — Configure DB Credentials
 
-Edit `src/main/java/com/srms/config/DBConnection.java`:
+Edit `src/main/java/com/evailx/config/DBConnection.java`:
 
 ```java
 private static final String USER     = "root";

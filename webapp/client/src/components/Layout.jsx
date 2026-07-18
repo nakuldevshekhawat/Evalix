@@ -58,7 +58,7 @@ export default function Layout() {
         <div className="topbar-left">
           <button className="btn btn-ghost btn-sm" style={{ padding: '6px 8px', display: 'none' }}
             id="hamburger" onClick={() => setSidebarOpen(o => !o)}>☰</button>
-          <div className="brand">SRMS<span className="brand-dot">.</span></div>
+          <div className="brand">Evailx<span className="brand-dot">.</span></div>
           <span className={`role-badge ${user?.role === 'FACULTY' ? 'faculty' : 'admin'}`}>
             {user?.role}
           </span>
@@ -74,7 +74,7 @@ export default function Layout() {
               <div className="profile-dropdown" onClick={() => setProfileOpen(false)}>
                 <div className="profile-info">
                   <div className="profile-full">{user?.fullName || user?.username}</div>
-                  <div className="profile-email">{user?.email || user?.username + '@srms.edu'}</div>
+                  <div className="profile-email">{user?.email || user?.username + '@evailx.edu'}</div>
                 </div>
                 <button className="dropdown-item" onClick={() => { setPwModal(true); }}>
                   🔑 Change Password

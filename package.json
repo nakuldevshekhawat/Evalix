@@ -1,7 +1,7 @@
 {
-  "name": "srms",
+  "name": "evailx",
   "version": "2.0.0",
-  "description": "Student Result Management System — Premium Web App",
+  "description": "Evailx — Premium Web App",
   "private": true,
   "scripts": {
     "install:all": "cd webapp/api && npm install && cd ../client && npm install",

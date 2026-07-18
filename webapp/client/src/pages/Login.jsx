@@ -33,7 +33,7 @@ export default function Login() {
       <form className="login-box" onSubmit={handleSubmit}>
         <div className="login-logo">
           <div className="login-logo-dot" />
-          Student Result Management System
+          Evailx
         </div>
         <div className="login-title">
           Welcome<br />
