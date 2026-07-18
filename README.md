@@ -6,6 +6,8 @@
 
 **Full-Stack Web App** — Built with Node.js + React. Premium UI, no database setup required.
 
+🔴 **Live Demo:** [https://evalix--srms.up.railway.app](https://evalix--srms.up.railway.app)
+
 ---
 
 ## 🚀 Quick Start — Local Development
@@ -27,7 +29,6 @@ npm start
 
 | Username           | Password     | Role    |
 |--------------------|--------------|---------|
-| `NakulShekhawat`   | `Nakul8949@` | ADMIN   |
 | `faculty1`         | `admin123`   | FACULTY |
 
 ---
